@@ -69,7 +69,7 @@ def boannews_crawl():
     global boan_count
     boan_count = 1
     TEXT_for_mail.delete(1.0, END)
-    TEXT_for_mail.insert(END, "케이뱅크 일일 외부 동향 {}\n\n안녕하세요 보안관제 OOO입니다.\n금일 일일 외부 동향 전달드립니다.\n\n".format(
+    TEXT_for_mail.insert(END, " 일일 외부 동향 {}".format(
         dt.strftime(dt.now(), "%Y%m%d")))
     global LIST_Boan
     url = "https://www.boannews.com/media/list.asp?mkind=1"
